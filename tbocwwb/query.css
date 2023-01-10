@@ -1,0 +1,275 @@
+@media (max-width: 600px){
+
+
+
+    /*---------------------------------------------------- Header Section ------------------------- ------------*/
+
+    .topnav{
+        flex-direction: column;
+        
+    }
+    .topnav .right-topnav{
+        text-align: right;
+        width: 100%;
+        
+        
+    }
+
+    .mainnav{
+        grid-template-columns: 1fr;
+        padding: 16px 0;
+        
+    }
+    .mainnav .left-mainnav{
+        text-align: center;
+        padding: 8px 0;
+    }
+    .mainnav .left-mainnav img{
+        width: 220px;
+    }
+    .mainnav .right-mainnav{
+        padding: 0px 8px;
+    }
+    .mainnav .right-mainnav h1{
+        font-size: 18px;
+        text-align: center;
+    }
+    .mainnav .right-mainnav h3{
+        margin-top: 12px;
+        text-align: center;
+        padding: 0 12px;
+        font-size: 14px;
+    }
+    .navbuttons{
+        text-align: center;
+        padding: 16px 0;
+    }
+   
+  
+    .bottomnav{
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+
+    /*---------------------------------------------------- Banner Section ------------------------- ------------*/
+
+    .mySlides img {
+    height: 200px;
+    }
+    .slideshow-container {
+        height: 200px;
+    }
+
+
+    /*---------------------------------------------------- footer Section ------------------------- ------------*/
+
+        .topfoot{
+            padding: 16px 8px;
+        }
+        .topfoot ul{
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 8px;
+        }
+        .topfoot ul li{
+            padding-top: 8px;
+        }
+        .divider{
+            display: none;
+        }
+        .bottomfoot h4{
+            font-size: 11px;
+        }
+
+
+        /*----------------------------------------------------------------------------- ------------*/
+    /*---------------------------------------   Instructions Page  ----------------------- ------------*/
+    /*----------------------------------------------------------------------------- ------------*/
+
+    .in-section{
+        
+        
+        padding: 16px 8px;
+    }
+    .instruction h2{
+        padding: 8px 0px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        line-height: 36px;
+        
+    }
+    .instruction h2 span{
+        font-size: 18px;
+    }
+    .instruction h3{
+        font-size: 18px;
+    }
+
+    .pagination {
+        
+    
+        text-align: center;
+    
+    }
+
+        /*----------------------------------------------------------------------------- ------------*/
+    /*---------------------------------------   other Page  ----------------------- ------------*/
+    /*----------------------------------------------------------------------------- ------------*/
+
+    .body-section{
+        min-height: auto;
+    
+        padding: 24px 16px;
+    }
+    .body-section .body-box{
+        width: 100%;
+        box-shadow: none;
+        padding: 32px 16px;
+        border-radius: 8px;
+        
+    }
+    .accordion{
+        padding: 16px 0;
+    }
+    .pagination a {
+        
+        
+        padding: 4px 8px;
+        font-size: 12px;
+        
+        margin:0px 4px;
+      }
+
+      .registration-sec{
+        padding: 16px 0px;
+      }
+      .registration-box{
+        width: 300px;
+      }
+      .registration-box form input[type=text],input[type=email],input[type=tel]{
+        width: 274px;
+      }
+      .registration-box form input[type=submit]{
+        width: 300px;
+      }
+      .registration-box a p{
+        
+        width: 300px;
+        margin-top: 0px;
+        text-align: left;
+        padding: 12px 0px 8px 4px;
+      }
+      .registration-box form a button{
+        width: 300px;
+      }
+      .registration-box form input[type=submit].login-btn{
+        width: 100%;
+    }
+
+    .top-manu{
+        padding: 0px;
+    }
+    .top-manu button{
+        padding: 20px 16px 6px 16px;
+        font-size: 11px;
+        margin-right: 0;
+    }
+    
+    .top-manu a span{
+        font-size: 10px;
+        margin-right: 8px;
+    }
+    .main-box{
+        width: 332px !important;
+        
+        padding: 24px 8px 8px 8px;
+        box-shadow: none;
+    }
+    .main-box h2{
+        padding-bottom: 36px;
+        font-size: 20px;
+    }
+    .main-box form input[type=text].application-input,input[type=email].application-input,input[type=tel].application-input,input[type=date].application-input{
+        width: 300px !important;
+    }
+    .appli-flex{
+        flex-direction: column;
+    }
+    .main-box form select{
+        width: 326px !important;
+    }
+    .main-box form input[type=text].town-input{
+        width: 300px !important;
+    }
+    .main-box form input[type=submit]{
+        width: 326px;
+    }
+    .main-box form input[type=text].half-input,input[type=date].half-input,input[type=tel].half-input{
+        width: 300px !important;
+    }
+    .main-box form input[type=submit].pay-btn{
+        width: 326px;
+    }
+
+    .history-box{
+        width: 332px !important;
+       
+    }
+    
+    .history-box .table-head h2{
+        
+        font-size: 20px;
+    }
+    .history-box .table-head #myInput{
+        width: 108px;
+    }
+    .history-box .history-tb{
+        border: 1px solid #d1d1d1;
+        width: 330px !important;
+        overflow-y: hidden;
+        
+    }
+    .history-box table td,.history-box table th{
+        font-size: 11px;
+    }
+    .full-dt-box{
+        width: 300px !important;
+        padding: 16px;
+    }
+    .full-dt-box h4{
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 1300px){
+
+
+    .mainnav .right-mainnav h1{
+        font-size: 22px;
+    }
+    .main-box{
+        width: 920px;
+    }
+    .main-box form input[type=text].application-input,input[type=email].application-input,input[type=tel].application-input{
+        width: 890px;
+    }
+    .main-box form select{
+        width: 200px;
+    }
+    .main-box form input[type=text].town-input{
+        width: 200px;
+    }
+    .main-box form input[type=text].half-input,input[type=date].half-input,input[type=tel].half-input{
+        width: 360px;
+    }
+
+    .history-box{
+        width: 936px;
+    }
+    .full-dt-box{
+        width: 876px;
+    }
+}

@@ -1,0 +1,733 @@
+/*---------------------------------------------------- Text Selection------------------------- ------------*/
+::-moz-selection { /* Code for Firefox */
+    color: #f1f1f1;
+    background: #141549;
+  }
+  
+  ::selection {
+    color: #f1f1f1;
+    background: #141549;
+  }
+/*---------------------------------------------------- Universal Selection------------------------- ------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   color: rgb(41, 39, 39);
+   font-family: 'Raleway', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(41, 39, 39);
+}
+
+
+/*---------------------------------------------------- Header Section ------------------------- ------------*/
+
+
+.topnav{
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+    background-color: #e8e8ed;
+    color: #0a0b25;
+    font-size: 12px;
+    
+}
+
+.topnav .left-topnav{
+    width: 50%;
+    text-align: left;
+}
+.topnav .right-topnav{
+    text-align: right;
+    width: 50%;
+    display: flex;
+    
+    justify-content: flex-end;
+}
+
+.topnav .right-topnav p a{
+    color: rgb(41, 39, 39);
+    transition: all 0.1s;
+}
+.topnav .right-topnav p a:hover{
+    color: #141549;
+    font-weight: 600;
+}
+
+.topnav .right-topnav button{
+    border: none;
+    background: transparent;
+}
+.topnav .right-topnav button i{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.dividertop{
+    margin: 0 8px;
+}
+.divider{
+    margin: 0 8px;
+}
+
+.mainnav{
+    padding: 8px 16px 16px 16px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    
+}
+.mainnav_home{
+    background-color: #e8e8ed;
+}
+.mainnav .left-mainnav{
+    text-align: left;
+}
+.mainnav .left-mainnav img{
+    width: 184px;
+}
+.mainnav .right-mainnav{
+    padding-left: 24px;
+}
+.mainnav .right-mainnav h1{
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainnav .right-mainnav h3{
+    font-size: 18px;
+    font-weight: 200;
+    
+}
+.navbuttons{
+    text-align: right;
+}
+.navbuttons a button{
+    font-size: 12px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 4px;
+    transition: all 0.3s;
+    background: linear-gradient(to bottom right, #141549 0%, #000000 100%);
+    
+    color: #f1f1f1;
+}
+.navbuttons a button:hover{
+   
+   background: linear-gradient(to bottom right, #0a0b25 0%, #0a0b25 100%);
+    
+}
+
+
+.bottomnav{
+    background-color: #141549;
+    color: #f1f1f1;
+    padding: 8px 48px;
+    
+
+}
+
+
+/*---------------------------------------------------- Banner Section ------------------------- ------------*/
+
+
+.mySlides {
+    display: none;
+}
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.dots{
+    background-color: transparent;
+    margin-top: -38px;
+
+}
+
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.5s;
+  
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*---------------------------------------------------- Body Section------------------------- ------------*/
+
+.main-body{
+    
+}
+
+/*---------------------------------------------------- Footer Section ------------------------- ------------*/
+.topfoot{
+    background-color: #0e0f33;
+    padding: 16px 16px;
+    
+}
+.topfoot ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+}
+.topfoot ul li{
+    list-style: none;
+    cursor: pointer;
+    color: #cdcdce;
+} 
+.topfoot ul li a{
+    color: #cdcdce;
+    transition: all 0.2s;
+} 
+.topfoot ul li a:hover{
+    color: #ffffff;
+}
+
+
+
+.bottomfoot{
+    background-color: #141549;
+    color: #cdcdce;
+    padding: 24px 16px;
+    text-align: center;
+}
+.bottomfoot h4{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+/*----------------------------------------------------------------------------- ------------*/
+/*---------------------------------------   Instructions Page  ----------------------- ------------*/
+/*----------------------------------------------------------------------------- ------------*/
+
+.in-section{
+    
+    
+    padding: 32px;
+}
+.instruction{
+    
+    padding: 16px 0;
+}
+.instruction h2{
+    padding: 8px 0px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    
+}
+.instruction h2 span{
+    background-color: #141549;
+    color: #f1f1f1;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-radius: 0px 32px 32px 0px;
+    font-size: 20px;
+    
+}
+.instruction h3{
+    margin: 16px 0px;
+    padding-left: 16px;
+}
+.instruction h4{
+    margin-bottom: 16px;
+    padding-left: 16px;
+}
+.instruction p{
+    padding:0px 16px 0px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+
+.pagination {
+    
+    padding: 36px 0px 16px 0px;
+    text-align: right;
+    width: 100%;
+  }
+  
+  .pagination a {
+    color: black;
+    
+    padding: 8px 16px;
+    text-decoration: none;
+    margin:0px 8px;
+  }
+  
+  .pagination a.active-i {
+    background-color: #141549;
+    color: #f1f1f1;
+    border-radius: 2px;
+  }
+  
+  .pagination a:hover:not(.active-i) {
+    background-color: #ddd;
+    border-radius: 2px;
+  }
+  .last-first{
+    pointer-events: none;
+  }
+
+
+  /*----------------------------------------------------------------------------- ------------*/
+/*---------------------------------------   other Page  ----------------------- ------------*/
+/*----------------------------------------------------------------------------- ------------*/
+
+
+.body-section{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+}
+.body-section .body-box{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 64px 36px;
+    border-radius: 16px;
+}
+.body-box h1{
+    font-size: 28px;
+    padding-bottom: 24px;
+}
+.body-box p{
+    font-size: 14px;
+    line-height: 22px;
+}
+.body-box h4{
+    padding-top: 16px;
+    font-size: 16px;
+}
+
+.body-box h4 a:hover{
+    color: #141549;
+    
+}
+
+.faq-box{
+
+}
+
+.accordion {
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .active, .accordion:hover {
+    
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .panel p{
+    text-align: left;
+    padding-bottom: 8px;
+    
+    font-size: 14px;
+  }
+  .panel p:last-child{
+    border-bottom: 1px solid #cdcdce;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  
+
+  
+  /*----------------------------------------------------------------------------- ------------*/
+/*---------------------------------------   Registration / login Page  ----------------------- ------------*/
+/*----------------------------------------------------------------------------- ------------*/
+
+
+.registration-sec{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.log-sec{
+  
+  margin: auto;
+}
+.log-sec .new-r-btn{
+  width: 100%;
+     
+  background-color: #141549;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 36px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+}
+.registration-box{
+    width: 400px;
+    min-height: 100px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: auto;
+    border-top: 5px solid #141549;
+    padding: 32px 16px 16px 16px;
+}
+.registration-box h2{
+    padding-bottom:24px;
+}
+.registration-box form input[type=text],input[type=email],input[type=tel]{
+
+  padding: 12px;
+  margin: 8px 0;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 372px;
+}
+.registration-box form input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus{
+    outline: none;
+    background-color: #f1f1f1;
+}
+.registration-box form input[type=submit]{
+    
+  background-color: #141549;
+  color: white;
+  padding: 12px 24px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 136px;
+  
+}
+.registration-box form input[type=submit].login-btn{
+    width: 400px;
+}
+.registration-box a p{
+   font-size: 14px;
+   
+   width: 394px;
+   text-align: right;
+   margin-top: -40px;
+   padding-bottom: 24px;
+}
+.registration-box form a button{
+    background-color: #141549;
+  color: white;
+  padding: 12px 24px;
+  margin: 12px 0 0px 0px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 400px;
+}
+
+
+ /*----------------------------------------------------------------------------- ------------*/
+/*---------------------------------------   other page  ----------------------- ------------*/
+/*----------------------------------------------------------------------------- ------------*/
+
+.top-manu{
+    background-color: #141549;
+    padding: 0 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-manu div{
+  display: flex;
+}
+.top-manu button{
+    padding: 18px 8px 4px 8px;
+    margin-right: 64px;
+    background: transparent;
+    border: none;
+    color: #e8e8ed;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.top-manu button:hover{
+    border-bottom: 3px solid #F8991C;
+}
+
+.fa-power-off{
+    color: #e8e8ed;
+    
+    
+}
+.top-manu .logout-box{
+    display: flex;
+    align-items: center;
+}
+.top-manu a span{
+    color: #e8e8e8;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+.top-manu button.manu-active{
+    border-bottom: 3px solid #F8991C;
+    background-color: #e8e8ed;
+    color: #141549;
+    
+}
+
+
+.main-box{
+    width: 1200px;
+    min-height: 360px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 48px 32px 32px 32px;
+}
+.main-box h2{
+    padding-bottom: 48px;
+}
+
+.main-box form label{
+  font-size: 14px;
+  font-weight: 600;
+}
+.requerd-fild{
+  color: red;
+  font-size: 20px;
+}
+.main-box form input[type=text].application-input,input[type=email].application-input,input[type=tel].application-input,input[type=date].application-input{
+
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 1172px;
+  }
+  .main-box form input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus{
+      outline: none;
+      background-color: #f1f1f1;
+  }
+  .main-box form input[type=submit]{
+      
+    background-color: #141549;
+    color: white;
+    padding: 12px 24px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 136px;
+    
+  }
+  .appli-flex{
+    display: flex;
+    
+    justify-content: space-between;
+  }
+  .appli-flex div{
+    
+  }
+  .main-box form select{
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 280px;
+  }
+  .main-box form input[type=file]{
+    padding: 16px 0px;
+    margin: 0px;
+   
+    
+    cursor: pointer;
+    width: 280px;
+  }
+
+  .main-box form select:focus{
+    outline: none;
+      background-color: #f1f1f1;
+  }
+  .main-box form input[type=text].town-input{
+    width: 280px;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .main-box form input[type=text].half-input,input[type=date].half-input,input[type=tel].half-input{
+
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 550px;
+  }
+  .main-box form input[type=submit].pay-btn{
+    width: auto;
+  }
+
+
+  /*----------------------------------------------------------------------------- ------------*/
+/*---------------------------------------   History page  ----------------------- ------------*/
+/*----------------------------------------------------------------------------- ------------*/
+
+.history-box{
+    width: 1200px;
+    min-height: 360px;
+    margin: auto;
+  
+}
+
+  
+
+.history-box .table-head{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    padding-bottom: 16px;
+    justify-content: space-between;
+}
+
+.history-box .table-head h2{
+    
+    display: inline;
+}
+.history-box .table-head #myInput{
+    display: block;
+    padding: 8px 16px;
+    width: 300px;
+    
+    border: none;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+}  
+.history-box .table-head #myInput:focus{
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+.history-box table {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  
+  .history-box table td,.history-box table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .history-box table th{
+    background-color: #f3f3f3;
+    padding: 16px 8px;
+    font-size: 16px;
+  }
+  .history-box table td a{
+    
+   width: 100%;
+   text-align: center;
+   padding: 0px 8px;
+  }
+  
+
+  .history-box .table-head a button{
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #141549;
+    color: #e8e8ed;
+    font-size: 12px;
+  }
+
+  .full-dt-box{
+    width: 1136px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    min-height: 360px;
+    padding: 32px;
+  }
+  .full-dt-box h4{
+    padding: 8px 0;
+    color: #5c5c5c;
+    
+  }
+  .full-dt-box h4 span{
+    color: #000000;
+    
+    padding: 0px 4px 0px 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
